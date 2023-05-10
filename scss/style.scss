@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+$bg-color: #2c444c;
+$text-color: #acc2d9;
+$text-color2: #5c80a9;
+$accent-color1: #1c7ca4;
+$accent-color2: #094974;
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3vh 3vh 0 3vh;
+    
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    width: 35vh;
+    
+}
+
+.timer__buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 2vh;
+    padding: 1vh 1vh 1vh 1vh;
+    margin-bottom: 1vh; 
+}
+
+.timer__digits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 2vh;
+    padding: 1vh 1vh 1vh 1vh;
+    margin-bottom: 1vh; 
+}
+
+.timer__ {
+    &digits-hours {
+        margin-right: 0.5vh; 
+    }
+    &digits-minutes {
+        margin-right: 0.5vh; 
+    }
+}
+
+.timer__button-start {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 10vh;
+    border-style: none;
+    margin-bottom: 1vh;
+    background: $accent-color1;
+    color: $text-color;
+    &:hover {
+        background-color: $accent-color2;
+        cursor: pointer;
+    }
+}
+
+.timer__button-pause {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 10vh;
+    border-style: none;
+    margin-bottom: 1vh;
+    background: $accent-color1;
+    color: $text-color;
+    &:hover {
+        background-color: $accent-color2;
+        cursor: pointer;
+    }
+}
+
+.timer__button-stop {
+    height: 3vh;
+    width: 10vh;
+    border-style: none;
+    border-radius: 1vh;
+    margin-bottom: 1vh;
+    background: $accent-color1;
+    color: $text-color;
+    &:hover {
+        background-color: $accent-color2;
+        cursor: pointer;
+    }
+}
+
+.timer__button-total {
+    margin-bottom: 1vh;
+}
+
+.sessions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 2vh;
+    padding: 0vh 1vh 1vh 1vh;
+}
